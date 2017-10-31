@@ -6,51 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Number 8 - Exercise</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap styles -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <!-- JQuery UI styles -->
+  <link rel="stylesheet" href=" http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- My styles -->
+  <link rel="stylesheet" href="styles.css">
+
 
 </head>
 <body>
 
   <div class="container">
+    <div class="row">
 
-    <div class="col-md-5">
-      <br>
-      <h2>Number 8 - Exercise</h2>
-      <br>
-      <form>
+      <!-- form column -->
+      <div class="col-md-5">
+        <br>
+        <h2>Number 8 - Exercise</h2>
+        <br>
+        <form action="#" onsubmit="renderCalendar()">
+          <div class="form-group row">
+            <label for="date-input" class="col-4 col-form-label float-right">Start Date:</label>
+            <div class="col-8">
+              <input class="form-control" type="date" required="true" value="" id="date-input">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="number-of-days-input" class="col-4 col-form-label float-right">Number of days:</label>
+            <div class="col-8">
+              <input class="form-control" type="number" required="true" value="" id="number-of-days-input">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="country-code-input" class="col-4 col-form-label float-right">Country Code:</label>
+            <div class="col-8">
+              <input class="form-control" type="text" required="true" value="" id="country-code-input">
+            </div>
+          </div>
+          <input type="submit" class="btn btn-primary float-right" value="Render Calendar"></input>
+        </form>
+      </div>
 
-        <div class="form-group row">
-          <label for="date-input" class="col-4 col-form-label float-right">Start Date:</label>
-          <div class="col-8">
-            <input class="form-control" type="date" value="" id="date-input">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="number-of-days-input" class="col-4 col-form-label float-right">Number of days:</label>
-          <div class="col-8">
-            <input class="form-control" type="number" value="0" id="number-of-days-input">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="country-code-input" class="col-4 col-form-label float-right">Country Code:</label>
-          <div class="col-8">
-            <input class="form-control" type="text" value="" id="country-code-input">
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary float-right">Render Calendar</button>
-      </form>
-    </div>
 
-  </div>
+      <!-- calendar column -->
+      <div class="col-md-5">
+        <br>
+        <br>
+        <div id="calendar-div">
+
+        </div>
+      </div>
+
+    </div><!-- row -->
+
+  </div><!-- container end -->
 
 
 
   <!-- Scripts -->
 
   <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- JQuery UI -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>;
   <!-- Tether for bootstrap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <!-- Bootstrap -->

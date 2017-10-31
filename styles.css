@@ -1,0 +1,21 @@
+
+.ui-datepicker-prev, .ui-datepicker-next{
+  display: none;
+}
+
+.ui-datepicker-week-end a{
+  background-color: yellow !important;
+}
+
+.ui-state-default{
+  background-color: #6dbc76 !important;
+  border-color: white !important;
+  color: #454545 !important;
+}
+
+.ui-datepicker-unselectable > span, .ui-state-disabled > span{
+  background: #454545 !important;
+}
+#calendar-div a{
+  cursor: default;
+}
