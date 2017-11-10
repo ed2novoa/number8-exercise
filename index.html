@@ -28,7 +28,7 @@
         <br>
         <h2>Number 8 - Exercise</h2>
         <br>
-        <form action="#" onsubmit="renderCalendar()">
+        <div>
           <div class="form-group row">
             <label for="date-input" class="col-4 col-form-label float-right">Start Date:</label>
             <div class="col-8">
@@ -47,8 +47,8 @@
               <input class="form-control" type="text" required="true" value="" id="country-code-input">
             </div>
           </div>
-          <input type="submit" class="btn btn-primary float-right" value="Render Calendar"></input>
-        </form>
+          <button class="btn btn-primary float-right" onclick="renderCalendar()">Render Calendar</button>
+        </div>
       </div>
 
 
@@ -56,8 +56,10 @@
       <div class="col-md-5">
         <br>
         <br>
+        <div id="loading-div">
+          <img src="./loading_icon.gif" alt="">
+        </div>
         <div id="calendar-div">
-
         </div>
       </div>
 
@@ -72,7 +74,7 @@
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- JQuery UI -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>;
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <!-- Tether for bootstrap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
